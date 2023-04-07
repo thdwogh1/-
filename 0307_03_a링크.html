@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      /*div{
+            display: none;
+        }
+        div:target{
+            display: block;
+           
+        }
+        #link1{
+            color: bisque;
+        }
+        #link2{
+            color: rebeccapurple;
+        }
+        #link3{
+            color: hotpink
+        }*/
+        #link1,#link2,#link3{
+            display: none;
+        }
+        #link1:target,#link2:target,#link3:target{
+            display: block;
+        }
+        /*body{
+            background: #ccc;
+        }
+        .wrap{
+            width: 80%;
+            margin: 50px auto 0;
+            background: #f4f4f4;
+            
+        }
+       
+        
+        #link1,span,#link2,#link3{
+            display:none;
+            
+        }
+        :target{
+            border: 1px solid #000;
+            
+        }
+        #link1:target, #link2:target, #link3:target, #link1:target+ span,#link2:target +span,#link3:target + span{
+            display: block;
+        }  
+     a{
+            color: darkorange;
+        }*/
+    </style>
+
+</head>
+<body>
+   
+   
+       <a href="#link1">link1</a>
+       <a href="#link2">link2</a>
+       <a href="#link3">link3</a>
+       <div id="link1">
+        <h3>content1 to link1</h3>
+        <p>안녕하세요</p>
+       </div>
+       <div id="link2">
+        <h3>content2 to link2</h3>
+        <p>안녕하세요</p>
+       </div>
+       <div id="link3">
+        <h3>content3 to link3</h3>
+        <p>안녕하세요</p>
+       </div>
+   
+    
+
+</body>
+</html>

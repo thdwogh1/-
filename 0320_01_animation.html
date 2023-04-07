@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background: blue;
+            animation-name: bg;
+            animation-duration: 1s;
+        }
+        @keyframes bg {
+            0% {background: red;}/* from 시작*/
+            25%{background: black;}
+            50% {background: green;}
+            75%{background: blue;}
+            100%{background: yellow;}/* to 끝*/
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

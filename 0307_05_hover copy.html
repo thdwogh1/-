@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.in{
+    display: none;
+}
+.out{
+    cursor: default;
+}
+.out:hover .in{
+    display: block;
+}
+.b{
+    visibility: hidden;
+}
+.a:hover ~.b{
+    visibility: visible;
+}
+.c:hover .out{
+    visibility: visible;
+}
+    </style>
+</head>
+<body>
+    <div class="out">out
+        <div class="in">in</div>
+    </div>
+<div class="a">aaaaa</div>
+<div class="b">bbbbb</div>
+<div class="c">ccccc</div>
+</body>
+</html>

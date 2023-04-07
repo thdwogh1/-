@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+         *{
+         margin: 0;
+         padding: 0;
+      }
+      input[type=radio]{
+            display: none;
+         }
+      
+      table{
+         width:800px;
+         height: 150px;
+         background-color: red;
+         text-align: center;
+      }
+   
+      div.one{
+         background: red;
+      }
+      div.two{
+         background: blue;
+      }
+      div.three{
+         background: green;
+      }
+      div.four{
+         background: yellow;
+      }
+      #one:checked ~ p .one{
+            display: block;
+         }
+         #two:checked ~ p .two{
+            display: block;
+         }
+         #three:checked ~ p .three{
+            display: block;
+         }
+         #four:checked ~ p .four{
+            display: block;
+         }
+      label{
+            display: inline-block;
+            width: 200px;
+            height: 50px;
+            font-size: 16px;
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
+            float: left;
+      
+         }
+         .a{
+            background-color: red;
+         }
+         .b{
+            background-color: blue;
+         }
+         .c{
+            background-color: green;
+         }
+         .d{
+            background-color: yellow;
+         }
+      label:hover{
+            background: #669;
+         }
+        
+       
+       
+       
+
+    </style> 
+</head>
+<body>
+   <input type="radio" name="one" id="one"checked>
+   <input type="radio" name="two" id="two">
+   <input type="radio" name="three" id="three">
+   <input type="radio" name="four" id="four">
+   
+   <table>
+      <tr>
+         <td>content1</td>
+      </tr>
+   </table>
+   
+   <p>
+      <label class="a" for="one">content1</label>
+      <label class="b" for="two">content2</label>
+      <label class="c" for="three">content3</label>
+      <label class="d" for="four">content4</label>
+   </p>
+</div>
+</body>
+</html>
